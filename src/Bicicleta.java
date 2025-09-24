@@ -12,23 +12,33 @@ public class Bicicleta {
         this.piñonActual = piñonActual;
     }
 
-    public int accelerar(int velocidadActual){
+    public int accelerar(){
         //doblar la velocidad actual x2
         int accelerado = velocidadActual *2;
         return accelerado;
     }
-    public int frenar(int velocidadActual){
+    public int frenar(){
         int frenar = velocidadActual /2;
         return frenar;
     }
 
     //Ajustar el plato y piñon dependiendo de los datos recibidos
 
-    public void cambiarPlato(int plato){
-        int ajustarPlato = plato %2;
-
+    public int cambiarPlato(){
+        int ajustarPlato = platoActual %4;
+        return ajustarPlato;
     }
-    public void cambiarPiñon(int piñon){
-        int ajustarPiñon = piñonActual %2;
+    public int cambiarPiñon(){
+        int ajustarPiñon = piñonActual %4;
+        return ajustarPiñon;
+    }
+
+    @Override
+    public String toString() {
+        return "Bicicleta{" +
+                "velocidadActual=" + velocidadActual +
+                ", platoActual=" + platoActual +
+                ", piñonActual=" + piñonActual +
+                '}';
     }
 }
