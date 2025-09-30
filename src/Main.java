@@ -12,6 +12,8 @@ public class Main {
         System.out.println("Mi Bicicleta cambiando el plato: " + miBicicleta.cambiarPlato());
         System.out.println("Tu Bicicleta cambiando el piñon: " + tuBicicleta.cambiarPiñon());
 
+        System.out.println("Mi Bicicleta despues de los cambios: "+ miBicicleta);
+        System.out.println("Tu Bicicleta despues de los cambios: "+ tuBicicleta);
     }
 
 }
